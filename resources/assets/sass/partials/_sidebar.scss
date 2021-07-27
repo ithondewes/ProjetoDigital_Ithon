@@ -1,0 +1,44 @@
+#sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: $sidebar-width;
+  z-index: 500;
+  border-right: 1px solid $border-color;
+}
+
+#sidebar #sidebar-body {
+  background-color: $white;
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#sidebar .navbar .close {
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  outline: none;
+  font-size: 1.5rem;
+}
+
+#sidebar .list-group .list-group-item {
+  border-right: none !important;
+  border-radius: 0 !important;
+}
+
+#sidebar .list-group .list-group a {
+  text-indent: .6em;
+}
+
+@media screen and (max-width: 768px) {
+  #sidebar {
+    display: none;
+    width: 100vw;
+  }
+}
